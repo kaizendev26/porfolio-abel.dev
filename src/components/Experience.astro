@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Web Frelance",
+    company: "",
+    description:
+      `Desarrolle varias aplicaciones web, incluyendo una aplicación de repetición 
+                espaciada inspirada en Anki y un sistema de gestión de inventarios para un negocio 
+                de alimentos.
+                Utilicé tecnologías como JavaScript, Node.js, Express.js y MySQL, enfocándome en 
+                crear soluciones escalables y eficientes para mejorar la operativa de los negocios.`,
+    link: "",
+  },
+  {
+    date: "Noviembre 2022",
+    title: "Desarrollador Web remoto",
+    company: "Coopel, Monterrey,NL",
+    description:
+      `Implemente la corrección de errores y el desarrollo de nuevas funcionalidades para 
+            la cadena de suministro, tanto en la tienda online como en la tienda física, utilizando 
+            tecnologías como Angular.`,
+  },
+  {
+    date: "Septiembre 2017 — Enero 2021",
+    title: "Desarrollador Web",
+    company: "ADINCO SA de CV",
+    description:
+              `Desarrollé y mantuve un sistema de E-Commerce para el sector energético, 
+                utilizando tecnologías como: JavaScript, C#, SQL Server, y Angular.
+                Optimicé la comunicación con el servidor utilizando JavaScript y AJAX, mejorando 
+                significativamente la velocidad de respuesta y la eficiencia en el manejo de 
+                peticiones asíncronas.`,
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
